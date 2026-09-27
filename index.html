@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOM AUTHENTIQUE 074</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">TOM <span>AUTHENTIQUE 074</span></div>
+  <nav><a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#contact">Contact</a></nav>
+  <button class="cart-btn" onclick="openCart()">🛒 Panier <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div>
+    <p class="badge">🔥 SERVICES DIGITAUX</p>
+    <h1>Bienvenue chez<br><span>TOM AUTHENTIQUE 074</span></h1>
+    <p>Retrouvez vos abonnements et services numériques rapidement et au meilleur prix.</p>
+    <a href="#produits" class="primary-btn">Découvrir la boutique</a>
+    <a href="https://t.me/" target="_blank" class="telegram-btn">🤖 Commander sur Telegram</a>
+  </div>
+</section>
+
+<section id="produits" class="products-section">
+  <div class="section-title"><p>NOTRE BOUTIQUE</p><h2>Nos produits</h2></div>
+  <div id="products" class="products-grid"></div>
+</section>
+
+<section class="advantages">
+  <div><strong>⚡ Rapide</strong><p>Activation rapide</p></div>
+  <div><strong>🔒 Sécurisé</strong><p>Commandes protégées</p></div>
+  <div><strong>💬 Support</strong><p>Assistance client</p></div>
+  <div><strong>🤖 Telegram</strong><p>Commande simplifiée</p></div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Besoin d'aide ?</h2>
+  <p>Contacte TOM AUTHENTIQUE 074 pour toute question concernant une commande.</p>
+  <a href="https://wa.me/22870746832" target="_blank">💬 WhatsApp</a>
+  <a href="mailto:tomauthentique@gmail.com">📧 Email</a>
+</section>
+</main>
+
+<footer><p>© 2026 TOM AUTHENTIQUE 074</p><p>Services digitaux • Paiement • Livraison</p></footer>
+
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>🛒 Votre panier</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total : <strong id="cartTotal">0 FCFA</strong></div>
+    <button class="checkout-btn" onclick="checkout()">💳 Passer la commande</button>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
